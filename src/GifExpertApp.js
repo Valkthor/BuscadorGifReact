@@ -21,11 +21,6 @@ import { GifGrid } from './components/GifGrid';
             < hr />
             {/* <button onClick={ handleAdd } >Agregar +</button> */}
             <ol>
-                {
-                    categories.map ( (category , i) => {
-                        return <li key={ category }> { category } </li>
-                    })
-                }
 
                 {
                     categories.map ( (category ) => (
