@@ -1,3 +1,10 @@
+# Buscador Gif con React
+
+utiliza la api de https://developers.giphy.com/dashboard/
+
+Para que la pagina funcione se tiene que dejar la pagina en la carpeta "Docs" y fijarse en la referencia del HTML, se tiene que colocar un punto antes del slash.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
