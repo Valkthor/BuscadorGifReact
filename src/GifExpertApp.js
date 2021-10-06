@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import { AddCategory } from './components/AddCategory';
 
  function GifExpertApp(props) {
 
@@ -7,17 +7,18 @@ import PropTypes from 'prop-types'
 
     const [categories, setCategories] = useState(categoriesX)
 
-    const handleAdd = () => {
-        //setCategories ( [...categories, "Hunter X"]);
-        setCategories( cats => [...cats, "Hunter X"]);
-    }
+    // const handleAdd = () => {
+    //     //setCategories ( [...categories, "Hunter X"]);
+    //     setCategories( cats => [...cats, "Hunter X"]);
+    // }
     
 
     return (
         <div>
             <h2>GifExpertApp</h2>
+            < AddCategory setCategories= { setCategories } />
             < hr />
-            <button onClick={ handleAdd } >Agregar +</button>
+            {/* <button onClick={ handleAdd } >Agregar +</button> */}
             <ol>
                 {
                     categories.map ( (category , i) => {
@@ -27,10 +28,6 @@ import PropTypes from 'prop-types'
             </ol>
         </div>
     )
-}
-
-GifExpertApp.propTypes = {
-
 }
 
 export default GifExpertApp
