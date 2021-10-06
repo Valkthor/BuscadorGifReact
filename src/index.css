@@ -26,3 +26,22 @@ body{
 input{
   width: 100%;
 }
+
+.card{
+  align-content: center;
+  border: 1px solid gray;
+  overflow: hidden;
+  margin: 5px;  
+  border-radius: 6px;
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+}
+
+.card-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
